@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>7DoC - Desafio 2</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+    <header>
+        <h1>7 Days of Code</h1>
+        <h3>Desafio 2 - Variáveis</h3>
+    </header>
+    <main>
+        <section class="container">
+            <div class="container-preencher">
+                <label for="nome" class="container-preencher-label">Nome</label>
+                <input type="text" placeholder="Insira aqui seu nome" class="container-preencher-input" id="nome">
+                
+                <label for="idade" class="container-preencher-label">Idade</label>
+                <input type="number" placeholder="Insira aqui sua idade" class="container-preencher-input" id="idade">
+                
+                <label for="linguagem" class="container-preencher-label">Linguagem de Programação</label>
+                <input type="text" placeholder="Insira aqui a linguagem de programação" class="container-preencher-input" id="linguagem">
+
+                <button type = "submit" onclick="mostraFrase()" class="botao-mostrar">Mostrar</button>    
+            </div>
+            <div>
+                <p class="frase">Aguardando preenchimento dos campos acima...</p>
+            </div>
+        </section>
+        <section class="container">
+            <div class="legenda"> 
+                <h3> Você está gostando da linguagem de programação que está estudando?</h3>
+            </div>
+            <div class="botoes-selecao">
+                <button type="submit" onclick = "respostaSim()" class="botoes-sim-e-nao" id="sim">Sim</button>
+                <button type="submit" onclick = "respostaNao()" class="botoes-sim-e-nao" id="nao">Não</button>
+            </div>
+            <div>
+                <p class="frase-opcao">Aguardando a seleção de uma opção...</p>
+            </div>
+        </section>
+    </main>    
+    <script src="main.js"></script>
+</body>
+</html>
