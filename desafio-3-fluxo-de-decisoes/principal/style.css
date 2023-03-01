@@ -1,0 +1,54 @@
+*{
+    text-align: center;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: black;
+    padding:2%;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-titulo{
+    color: white;
+}
+
+.container-botao{
+    border:none;
+    width: 150px;
+    font-size: 1rem;;
+    padding:1%;
+    background-color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container-botao:hover{
+    transform: scale(1.1);
+    background-color: #F16767;
+    color:white;
+}
+
+.container-2{
+    margin-top: 100px;
+}
+
+.container-2-inserir-curso{
+    width: 200px;
+    font-size: 1rem;
+    padding:1%;
+    margin-right: 20px;
+}
+
+.lista{
+    font-size: 1rem;
+    color: white;
+    margin-top: 100px;
+}
