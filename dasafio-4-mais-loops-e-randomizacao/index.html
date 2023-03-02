@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-Br" >
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da adivinhação</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<main class="conteudo">
+	
+	<section class="conteudo-principal">
+		<h1 class="conteudo-principal-titulo">Qual número estou pensando?</h1>
+		<p class="conteudo-principal-paragrafo">Você tem 3 chances para acertar um número entre 0 e 20. Boa sorte!</p>
+		<input class="conteudo-principal-input" type="number" id="valor">
+	</section>
+	
+	<section class="conteúdo-botoes">
+		<button class="conteudo-botoes-btn" onclick="chutar()">Chutar</button>
+		<button class="conteudo-botoes-btn" onclick="reiniciar()">Reiniciar</button>
+	 </section>
+
+	<span class="conteudo-resultado" id="result"></section>
+</main>
+<footer>
+	<label for="btn" class="mudar-tema"></label>
+</footer>
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Rubik:wght@300;400;600;700;900&display=swap');
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+:root{
+	--cor-primaria:#FAF8F1;
+	--cor-secudaria:#C58940;
+	--cor-terciaria:#E5BA73;
+	--icon: url("https://imgur.com/BMspCIX.png");
+}
+
+.dark-mode{
+	--cor-primaria:#2E0249;
+	--cor-secudaria:#F10086;
+	--cor-terciaria:#F582A7;
+	--icon: url("https://imgur.com/GBRzwD6.png");
+}
+
+body {
+	font-size: 100%;
+	text-align: center;
+	background-color: var(--cor-primaria);
+}
+
+.conteudo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap:2rem;
+	margin:10% 30%;
+	padding:3%;
+	border-radius: 50px;
+	background: linear-gradient(70deg,  var(--cor-secudaria) 5%, var(--cor-terciaria) 100%);
+}
+
+.conteudo-principal{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap:1rem;
+	color:var(--cor-primaria);
+	font-family: Poppins;
+}
+
+.conteudo-principal-titulo{
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.conteudo-principal-paragrafo{
+	font-size: 1rem;
+	font-weight: 300;
+	padding:0 15%
+}
+
+.conteudo-principal-input{
+	width: 120px;
+	font-size: 1rem;
+	font-weight: 700;
+	border:none;
+	border-radius: 10px;
+	text-align: center;
+	padding:3%;
+	color:var(--cor-secudaria);
+}
+
+.conteúdo-botoes{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	gap:20%;
+}
+
+.conteudo-botoes-btn{
+	width: 120px;
+	padding: 3%;
+	font-family: Poppins;
+	font-size:1rem;
+	font-weight: 700;
+	color:var(--cor-secudaria);
+	border:none;
+	border-radius:10px;
+	background-color:var(--cor-primaria);
+	cursor: pointer;
+	transition: transform 200ms ease-in-out;
+}
+
+.conteudo-botoes-btn:hover{
+	transform: scale(1.1);
+	background-color: var(--cor-terciaria);
+	color:var(--cor-primaria);
+}
+
+.depoisdochute{
+	font-family: Poppins;
+	font-size:1rem;
+	font-weight: 300;
+	color:var(--cor-primaria);
+}
+
+.mudar-tema{
+	margin-top: 30px;
+    align-content: center;
+    background: var(--icon);
+    padding:55px;
+    background-repeat: no-repeat;
+    cursor: pointer; 
+}
