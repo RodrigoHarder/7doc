@@ -1,0 +1,111 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+:root{
+    --icon:url("https://imgur.com/JokitsJ.png");
+    --cor-primaria:#E5E5CB;
+    --cor-secundaria:#D5CEA3;
+    --cor-terciaria:#3C2A21;
+    --cor-quaternaria:#1A120B;
+    --font-menor:1.5rem;
+    --font-media:2rem;
+    --fonte-maior:3rem;
+}
+
+.mudar-cor{
+    --icon:url("https://imgur.com/VFlYUnB.png");
+    --cor-primaria:#434242;
+    --cor-secundaria:#222222;
+    --cor-terciaria:#22A39F;
+    --cor-quaternaria:#F3EFE0;
+}
+
+body{
+    background-color: var(--cor-secundaria);
+    margin:100px;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    color:var(--cor-quaternaria);
+}
+
+.cabecalho-titulo{
+    font-size: var(--fonte-maior);
+    font-weight: bold;
+}
+
+.cabecalho-subtitulo{
+    font-size: var(--font-media);
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap:20px;
+}
+
+.conteudo-inputs, .conteudo-delecao{
+    display: flex;
+    gap:40px;
+}
+
+.conteudo-inputs-item, .conteúdo-inputs-categoria, #conteudo-delecao-apagar{
+    padding: 10px;
+    font-size: var(--font-menor);
+    font-weight: bold;
+    text-align: center;
+    border:3px solid var(--cor-terciaria);
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    color:var(--cor-terciaria);
+}
+
+.conteudo-botao{
+    width: 150px;
+    padding:10px;
+    font-size: var(--font-menor);
+    font-weight: bold;
+    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    border: 3px solid var(--cor-terciaria);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.conteudo-botao:hover{
+    transform: scale(1.1);
+    background-color: var(--cor-terciaria);
+    border-color: (--cor-quaternaria);
+    color: var(--cor-primaria);
+}
+
+.novos-itens{
+    font-size: var(--font-media);
+    font-weight: bold;
+    color: var(--cor-quaternaria);
+}
+
+.rodape{
+    display: flex;
+    justify-content: center;
+}
+
+.rodape-mudar-cor{
+    width: 32px;
+    background:var(--icon);
+    background-repeat: no-repeat;
+    padding:33px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+

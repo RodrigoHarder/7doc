@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Filmes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="cabecalho-titulo">Lista de Filmes</h1>
+        <h2 class="cabecalho-subtitulo">Insira ou remova filmes que você quer assistir da sua lista e os separe por gêneros</h2>
+    </header>
+    <main class="conteudo">
+        <section class="conteudo-inputs">
+            <input type="text" id="item" class="conteudo-inputs-item" placeholder="Insira o nome do filme">
+            <input type="text" id="categoria"  class="conteúdo-inputs-categoria" placeholder="Insira a categoria">
+            <button type="submit" class="conteudo-botao" onclick="adicionarFilme()">Adicionar</button>
+        </section>
+        <section class="conteudo-delecao">
+            <select id="conteudo-delecao-apagar"></select>
+            <button class="conteudo-botao" type="submit" onclick="deletarFilme()">Deletar</button>
+          </section>
+        <div class="novos-itens"></div>
+    </main>
+    <footer class="rodape">
+        <div class="rodape-mudar-cor"></div>
+    </footer>
+<script src="main.js"></script>
+</body>
+</html>
