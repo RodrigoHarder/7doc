@@ -72,7 +72,7 @@ function perguntas(){
     }
 }
 
-var listaDeCursos = [""];
+var listaDeCursos = [];
 var novo = document.querySelector(".lista")
 
 function adicionar(){
@@ -87,6 +87,6 @@ function imprimirNaTela(){
     var imprimir = "";
     for(var i=0; i<listaDeCursos.length; i++){
         imprimir = `<li>${listaDeCursos[i]}</li>`;
-        novo.innerHTML = imprimir;
     }
+    novo.innerHTML += imprimir;
 }
