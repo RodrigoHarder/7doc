@@ -56,12 +56,12 @@ O resultado final dos projetos pode ser visto no vídeo abaixo.
 1. Clonar o repositório
 
 ```
-git clone https://github.com/RodrigoHarder/Imersao_Dev_6.git
+git clone https://github.com/RodrigoHarder/7doc-programacao.git
 ```
-2. Localizar e abrir a pasta *imersao_dev*
+2. Localizar e abrir a pasta *7doc-programacao*
 
 ```
-cd imersao_dev
+cd 7doc-programacao
 ```
 
 ## **Tecnologias usadas**
